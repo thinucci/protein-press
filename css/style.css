@@ -1,10 +1,30 @@
-h1 {color: white;
-	font-family: Verdana ;
+#big-wrapper {
+	background-color: rgba(182,199,178,1);
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px;
 
-	}
+}
 
-* {
-	background-color: #d8d8d8;
+header {
+	background-color: rgba(220,89,43,1);
+	height: 100px;
 
+}
 
+header h1 {
+
+	color: white;
+	font-family: Verdana, cursive;
+
+}
+
+section h1{
+	font: normal 3em Verdana, cursive;
+
+}
+
+.video-motivation{
+	width: 300px;
+	height: 300px;
 }
