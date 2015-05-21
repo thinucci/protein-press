@@ -41,6 +41,11 @@ body{
   padding-right: 30px;
 }
 
+.border-bottom {
+  border-bottom: 1px dotted white;
+  padding-bottom: 30px;
+}
+
 /*///////LAYOUT////////*/
 
 .col-4{
@@ -76,13 +81,13 @@ header {
 	float: left;
 	position: relative;
 	bottom: 24px;
-	left: 140px;
+	left: 165px;
 }
 
 .navbar{
 	float: right;
 	position: relative;	
-	right: 240px;
+	right: 245px;
 	top: 24px;
 	
 }
@@ -93,7 +98,7 @@ header {
 
 }
 
-/*///////MAIN SECTIONS////////*/
+/*///////MAIN SECTIONS - HOME PAGE////////*/
 
 
 section {
@@ -140,16 +145,87 @@ section h3{
 	position-top: 100px;
 }
 
+/*///////MAIN SECTIONS - DIET////////*/
+
+#rec-1{
+	background-color: #ccc;
+	text-align: center;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 18px;
+}
+
+#rec-1 img{
+	width: 25%;
+	height: 25%;
+	float: left;
+	margin-right: 2%;
+}
+
+#rec-1 p{
+	text-align: center;
+}
+
+#rec-1 h2{
+	text-align: center;
+	margin-top: 0;
+	text-decoration: underline;
+}
+
+
 /*///////FOOTER////////*/
 
 footer{
 
 	background-color: rgba(220,89,43,1);
-	text-align: center;
 	border-top: 2px black solid;
 	font-family: 'Pathway Gothic One', sans-serif;
 	padding: 1px 1px;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 40px;
 
+}
+
+footer p{
+	left: 165px;
+	position: relative;
+	bottom: 5px;
+}
+
+/*///////SOCIAL////////*/
+
+#social{
+	position: relative;
+	float: right;
+	right: 170px;
+	bottom: 50px;
+
+}
+
+a.fbook, a.twit, a.gplus {
+  background: url(../images/social-icons.png) no-repeat;
+}
+
+a.fbook { background-position: 0 0; }
+a.fbook:hover { background-position: -40px 0; }
+a.fbook:active { background-position: -80px 0; }
+
+a.twit { background-position: 0 -40px; }
+a.twit:hover { background-position: -40px -40px; }
+a.twit:active { background-position: -80px -40px; }
+
+a.gplus { background-position: 0 -80px; }
+a.gplus:hover { background-position: -40px -80px; }
+a.gplus:active { background-position: -80px -80px; }
+
+#social a {
+  width: 40px;
+  height: 40px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
 }
 
 /*///////MEDIA////////*/
