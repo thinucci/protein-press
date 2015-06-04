@@ -22,7 +22,7 @@
 	else {
 		$('#totalIntakeMin').text('');
 	  	$('#totalIntakeMax').text('');
-		$('#invalidInput').text('Not a valid weight number.');
+		$('#invalidInput').text('Not a valid weight number.').css('color','red');
 	}
     
    });
