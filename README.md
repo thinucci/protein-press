@@ -8,24 +8,24 @@ ____________
 
 * Home Page
 
-- This page will be the home page.
-- Tabs with videos: Diet/Exercises/Motivation (JQuery)
+This page will be the home page.
+Tabs with videos: Diet/Exercises/Motivation (JQuery)
 
 * Diet
 
-- Log of different recipies. Images and text.
+Log of different recipies. Images and text.
 
 * Supplements
 
-- Log of different supplements. Images and text.
+Log of different supplements. Images and text.
 
 * Calculator
 
-- Protein Calculator - input body weight and get daily protein intake 
+Protein Calculator - input body weight and get daily protein intake (JQuery)
 
 * Contact
 
-- Contact form and map.
+Contact form and map. (PHP and JQuery)
 
 
 FURTHER DESCRIPTION
