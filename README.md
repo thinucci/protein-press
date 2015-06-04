@@ -8,37 +8,24 @@ ____________
 
 * Home Page
 
-- This page will be the home page. It will cover news stories about the bodybuilding world, links and articles.
-
-* Profile
-
-- This page will cover the user's profile page. 
-- Features will be: 
-	- Body Measurements
-	- Diet Plan (Protein/Fat/Carb/Calories daily routine)
-	- Age, Name, Goal (Muscle growth, Fat loss, Strenght increase)
-	- Facebook/Instagram 
-	- Progress photos
+- This page will be the home page.
+- Tabs with videos: Diet/Exercises/Motivation (JQuery)
 
 * Diet
 
-- This page will be categorized in:
-	- Chicken Recipes
-	- Beef Recipes
-	- Vegan Recipes
-	- Lean Snacks
-	- Lean Deserts
-- Within each page will feature video links to "How to" recipes, Nutritional Values and pictures.
+- Log of different recipies. Images and text.
 
-* Exercises
+* Supplements
 
-- This page will be categorized in:
-	- Bicep Exercises
-	- Tricep Exercises
-	- Chest Exercises
-	- Back Exercises
-	- Leg Exercises
-- Within each page will feature video links to "How to" execute specific types of exercises for each body part.
+- Log of different supplements. Images and text.
+
+* Calculator
+
+- Protein Calculator - input body weight and get daily protein intake 
+
+* Contact
+
+- Contact form and map.
 
 
 FURTHER DESCRIPTION
