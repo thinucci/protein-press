@@ -30,6 +30,7 @@
 
 body{
 	background-color: #ccc;
+	margin: 0;
 
 }
 
@@ -251,5 +252,7 @@ footer{
 	text-align: center;
 	height: 50px;
 	width: 100%;
+	bottom: 0;
+	left: 0;
 }
 
