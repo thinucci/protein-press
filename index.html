@@ -20,15 +20,15 @@
 		<div id="logo">
 			<h1>PROTEIN-PRESS</h1>
 		</div>
-	</div>
+	</div><!--wrapper-->
 
 	<div class="wrapper">	
 		<div id="navbar">
 			<nav>
-				<a href="index.html">HOME </a>
-				<a href="diet.html">DIET </a>
-				<a href="exercises.html">EXERCISES </a>
-				<a href="contact.html">CONTACT </a>
+				<a href="index.html">HOME</a>
+				<a href="html/diet.html">DIET</a>
+				<a href="html/supplements.html">SUPPLEMENTS</a>
+				<a href="html/contact.html">CONTACT</a>
 			</nav>
 		</div><!--#navbar-->
 	</div><!--wrapper-->
@@ -37,52 +37,78 @@
 
 	<!--////////MAIN START///////-->
 
-	<div class="wrapper" class="row">
+	<div class="wrapper divider row">
  
-		<section id="vid-1" class="col-12 first shadow">
+		<section id="vidTab" class="first col-12 shadow">
 			<iframe width="853" height="480" src="https://www.youtube.com/embed/ZmAFMNmSKus" frameborder="0" allowfullscreen></iframe>
 		</section>
 
-		<section class="foodList col-4 first border-right">
-		  <h3>Protein</h3><br>
-	      <p>Lean Chicken Breast</p>	
-	      <p>Egg Whites</p>
-	      <p>Greek Yogurt</p>
-	      <p>Cottage Cheese</p>
-	      <p>Lean Steak</p>
+		<section id="foodList" class="row">
+		
+			<div class="first col-4 border-right">
+		  		<h3>Protein</h3><br>
+	      		<p>Lean Chicken Breast</p>	
+	      		<p>Egg Whites</p>
+	      		<p>Greek Yogurt</p>
+	      		<p>Cottage Cheese</p>
+	      		<p>Lean Steak</p>
+	      	</div>
+        
+
+        	<div class="col-4 border-right">
+	  			<h3>Carbohydrates</h3><br>
+	      		<p>Brown Rice</p>	
+	      		<p>Sweet Potatoes</p>
+	      		<p>Whole Grain Bread</p>
+	      		<p>Oatmeal</p>
+	      		<p>High-Fiber Cereal</p>
+	      	</div>
+        
+
+         	<div class="col-4">
+	      		<h3>Fat</h3><br>
+	      		<p>Salmon</p>	
+	      		<p>Sunflower Seeds</p>
+	      		<p>Avocado</p>
+	      		<p>Extra Virgin Olive Oil</p>
+	      		<p>Coconut Oil</p>
+	      	</div>
         </section>
 
-        <section class="foodList col-4 border-right">
-	      <h3>Carbohydrates</h3><br>
-	      <p>Brown Rice</p>	
-	      <p>Sweet Potatoes</p>
-	      <p>Whole Grain Bread</p>
-	      <p>Oatmeal</p>
-	      <p>High-Fiber Cereal</p>
+        <section id="calculator" class="first col-12 shadow">
+	    	<h1>Protein Calculator</h1>
+
+			<div>
+			  	<h3>Body Weight (kg): </h3>
+			  	<input id="weight" type="text" name="bodymass" >
+			</div>
+
+		    <select id = "weightNumberType">
+	          	<option value = "1">KG</option>
+	          	<option value = "2">LB</option>
+	        </select>
+	  
+	       	<div>
+			  	<h3>Protein Intake: <span id="totalIntakeMin"></span><span id="totalIntakeMax"></span><span id="invalidInput"></span></h3>
+			</div>
+
+			<div>
+			  	<button id="calculate" >Calculate</button>
+			</div>
         </section>
 
-         <section class="foodList col-4">
-	      <h3>Fat</h3><br>
-	      <p>Salmon</p>	
-	      <p>Sunflower Seeds</p>
-	      <p>Avocado</p>
-        </section>
-
-        <h1 class="motivation">-MOTIVATION-HEART-STRENGTH-DETERMINATION-</h1>
+        <h1 id="motivation">-MOTIVATION-HEART-STRENGTH-DETERMINATION-</h1>
 
 	</div> <!-- wrapper-->
 
 	<!--////////MAIN END///////-->
 
 	<footer>
-		<p>&copy; 2015 Protein Press Writers. All rights reserved.</p>
-
-		<div id="social">
-		  <a class="twit" href="#" title="Twitter">Twitter</a>
-		  <a class="fbook" href="#" title="Facebook">Facebook</a>
-		  <a class="gplus" href="#" title="Google Plus">Google Plus</a>
-		</div>
+		<p>&copy; 2015 Protein Press. All rights reserved.</p>
 	</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/calculator.js"></script>
 	
 
 </body>

@@ -21,12 +21,28 @@
 	
 }
 
+.divider{
+	margin-top: 150px;	
+}
+
+
 /*///////GLOBAL////////*/
 
 body{
 	background-color: #ccc;
 
 }
+
+
+/*///////MEDIA////////*/
+
+img, video, audio, iframe, table, form {
+  width: 100%; /* IE */
+  max-width: 100%; /* FF, Safari, Chrome */
+}
+
+
+/*///////STYLES////////*/
 
 .shadow {
   box-shadow: 0 3px 30px #333;
@@ -41,6 +57,7 @@ body{
   border-bottom: 1px dotted white;
   padding-bottom: 30px;
 }
+
 
 /*///////LAYOUT////////*/
 
@@ -57,6 +74,7 @@ body{
   margin-left: 0%;
 }
 
+
 /*///////HEADER////////*/
 
 header {
@@ -70,76 +88,64 @@ header {
 
 }
 
+/*///////LOGO////////*/
+
 #logo{
 	float: left;
-<<<<<<< HEAD
-	position: relative;
-	bottom: 24px;
-	left: 165px;
-}
-
-/*///////NAVBAR////////*/
-
-.navbar{
-	float: right;
-	position: relative;	
-	right: 160px;
-	top: 24px;
-	
-=======
 }
 
 #logo h1{
 	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 40px;
+	font-size: 60px;
+	position: relative;
+	bottom: 30px;
 }
+
+
+/*///////NAVBAR////////*/
 
 #navbar{
 	float: right;
-	background: blue;
-	width: 30%;
->>>>>>> home-page
 }
 
 #navbar a{
 	font-family: 'Pathway Gothic One', sans-serif;
 	font-size: 25px;
-	background: #ccc;
-	border: 1px solid black;
-	border-radius: 3px 3px 3px 3px;
-	margin-right: 5px;
-	padding: 1% 1%;	
+	padding: 2px 10px;
 	text-decoration: none;
-	text-align: center;
-
+	color: black;
+	position: relative;
+	top: 30px;
+	border-right: 2px solid black;
 }
 
-.navbar a.visited {
+#navbar a.visited {
   text-decoration: none;
 }
 
-/*///////MAIN SECTIONS - HOME PAGE////////*/
+
+/*///////MAIN SECTIONS - HOME////////*/
 
 
 section {
-  padding: 30px;
+  padding: 10px;
   margin-bottom: 30px;
-  background: white;
 }
 
-.foodList{
-	background-color: #ccc;
-	text-align: center;
+#foodList h3{
 	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 18px;
-}
-
-section h3{
 	font-size: 32px;
 	text-decoration: underline;
+	text-align: center;
 }
 
-.motivation{
+#foodList p{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+#motivation{
 	clear: both;
 	text-align: center;	
 	bottom: 40px;
@@ -150,6 +156,34 @@ section h3{
 	display: block;
 	position-top: 100px;
 }
+
+#calculator{
+	clear: both;
+	text-align: center;
+	font-family: 'Pathway Gothic One', sans-serif;
+	width: 32%;
+	background-color: #eee;
+}
+
+#calculator h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 40px;
+	color: green;
+}
+
+#calculate{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 24px;
+	padding: 10px 10px;
+	border: 5px solid green;
+}
+
+#weight{
+	width: 100px;
+	height: 40px;
+	border: 1px solid green;
+}
+
 
 /*///////MAIN SECTIONS - DIET////////*/
 
@@ -185,61 +219,8 @@ footer{
 	background-color: rgba(220,89,43,1);
 	border-top: 2px black solid;
 	font-family: 'Pathway Gothic One', sans-serif;
-	padding: 1px 1px;
-<<<<<<< HEAD
-	height: 40px;
-	left: 0;
-}
-
-footer p{
-	left: 165px;
-	position: relative;
-	bottom: 5px;
-}
-
-/*///////SOCIAL////////*/
-
-#social{
-	position: relative;
-	float: right;
-	right: 170px;
-	bottom: 50px;
-
-}
-
-a.fbook, a.twit, a.gplus {
-  background: url(../images/social-icons.png) no-repeat;
-}
-
-a.fbook { background-position: 0 0; }
-a.fbook:hover { background-position: -40px 0; }
-a.fbook:active { background-position: -80px 0; }
-
-a.twit { background-position: 0 -40px; }
-a.twit:hover { background-position: -40px -40px; }
-a.twit:active { background-position: -80px -40px; }
-
-a.gplus { background-position: 0 -80px; }
-a.gplus:hover { background-position: -40px -80px; }
-a.gplus:active { background-position: -80px -80px; }
-=======
-	display: block;
+	text-align: center;
+	height: 50px;
 	width: 100%;
-	height: 60px;
->>>>>>> home-page
-
-#social a {
-  width: 30px;
-  height: 30px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
 }
 
-/*///////MEDIA////////*/
-
-img, video, audio, iframe, table, form {
-  width: 100%; /* IE */
-  max-width: 100%; /* FF, Safari, Chrome */
-}

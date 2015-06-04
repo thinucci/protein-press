@@ -14,7 +14,7 @@
 
 	  	var minimum = input * 1.2;
 	  	var maximum = input * 2.2;
-	  	$('#totalIntakeMin').text(minimum + 'g' + '-');
+	  	$('#totalIntakeMin').text(minimum + 'g' + '' + '-' + '');
 	  	$('#totalIntakeMax').text(maximum + 'g');
 	  	$('#invalidInput').text('');
 	}
