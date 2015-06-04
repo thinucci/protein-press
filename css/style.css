@@ -15,13 +15,9 @@
   box-sizing: border-box;
 }
 
-#wrapper {
+.wrapper {
 	width: 960px;
 	margin: 0 auto;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-	padding: 4% 4%;
-	margin-top: 6%;
 	
 }
 
@@ -61,7 +57,6 @@ body{
 header {
 	background-color: rgba(220,89,43,1);
 	border-bottom: 2px black solid;
-	display: block;
 	width: 100%;
 	height: 80px;
 	position: fixed;
@@ -70,24 +65,22 @@ header {
 
 }
 
-.logo{
-	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 24px;
+#logo{
 	float: left;
-	position: relative;
-	bottom: 24px;
-	left: 140px;
 }
 
-.navbar{
+#logo h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 40px;
+}
+
+#navbar{
 	float: right;
-	position: relative;	
-	right: 240px;
-	top: 24px;
-	
+	background: blue;
+	width: 30%;
 }
 
-.navbar a{
+#navbar a{
 	font-family: 'Pathway Gothic One', sans-serif;
 	font-size: 25px;
 
@@ -102,21 +95,7 @@ section {
   background: white;
 }
 
-#protein{
-	background-color: #ccc;
-	text-align: center;
-	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 18px;
-}
-
-#carb{
-	background-color: #ccc;
-	text-align: center;
-	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 18px;
-}
-
-#fat{
+.foodList{
 	background-color: #ccc;
 	text-align: center;
 	font-family: 'Pathway Gothic One', sans-serif;
@@ -149,6 +128,9 @@ footer{
 	border-top: 2px black solid;
 	font-family: 'Pathway Gothic One', sans-serif;
 	padding: 1px 1px;
+	display: block;
+	width: 100%;
+	height: 60px;
 
 }
 
