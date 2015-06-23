@@ -74,10 +74,12 @@ img, video, audio, iframe, table, form {
 
 .col-6{
 	width: 48%;
+	float: left;
 }
 
 .col-8{
 	width: 64%;
+	float: left;
 }
 
 [class*="col-"] {
@@ -326,6 +328,34 @@ section {
 	z-index: 1;
 }
 
+/*///////MAIN SECTIONS - CONTACT////////*/
+
+#contact-form div{
+	background-color: white;
+	padding: 30px;
+	margin-bottom: 10px;
+
+}
+
+#contact-form h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#contact-form label{
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#contact-form input{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#contact-form textarea{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
 
 /*///////FOOTER////////*/
 

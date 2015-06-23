@@ -2,49 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <title>Protein Press - The true source of information for bodybuilders</title>
 
   <!--////////FONTS///////-->
   <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 
   <!--////////CSS REFERENCE///////-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
-  <!--////////WEBSITE START///////-->
-<body>
+  	<!--////////WEBSITE START///////-->
+  	
+<body class="background">
 
-	<header class="row">
-		<div class="wrapper">
-			<div class="logo">
-				<h1>PROTEIN-PRESS</h1>
-			</div>
+	<!--////////SOCIAL///////-->
 
-			<div class="navbar">	
-				<nav>
-					<a href="index.html">HOME </a>
-					<a href="diet.html">DIET </a>
-					<a href="exercises.html">EXERCISES </a>
-					<a href="contact.html">CONTACT </a>
-				</nav>
-			</div><!--navbar-->
+	<div id="social">
+      <a class="twit" href="#" title="Twitter">Twitter</a>
+      <a class="fbook" href="#" title="Facebook">Facebook</a>
+      <a class="gplus" href="#" title="Google Plus">Google Plus</a>
+    </div>
+
+    <!--////////HEADER///////-->
+
+	<header>
+	<div class="wrapper">
+		<div id="logo">
+			<h1>PROTEIN-PRESS</h1>
 		</div>
+	</div><!--wrapper-->
+
+	<div class="wrapper">	
+		<div id="navbar">
+			<nav>
+				<a class="border-right" href="../index.html">HOME</a>
+				<a class="border-right" href="diet.html">DIET</a>
+				<a class="border-right" href="supplements.html">SUPPLEMENTATION</a>
+				<a href="contact.html">CONTACT</a>
+			</nav>
+		</div><!--#navbar-->
+	</div><!--wrapper-->
+
 	</header>
 
-	<div id="wrapper" class="row">
- 
+	<!--////////MAIN START///////-->
+
+	<div class="wrapper divider row">
+
+		<main id="contact-form" class="row">
+			<div class="first col-12 shadow">
+
+				<h1>Send us your recipe!</h1>
+
+				<form action="#" method="post">
+					
+					<label for="fullname">Name</label>
+					<input type="text" id="fullname" name="fullname" placeholder="your name">
+
+					<label for="email">Email</label>
+		          	<input type="text" id="email" name="email" placeholder="your email">
+
+		         	<label for="message-title">Write the recipe title here</label>
+		          	<textarea id="message-title" name="message-title" rows="1"></textarea>
+		          
+		         	<label for="message">Write your recipe here</label>
+		          	<textarea id="message" name="message" rows="12"></textarea>
+
+		          	<input type="submit" value="send">
+
+				</form>
+			</div>
+		</main>
+
+		<section class="first col-12 shadow">
+	        <!-- Map -->
+	        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6049.760881033193!2d-73.99517294629514!3d40.69863072747073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a47df06b185%3A0xc889234bc07c42ee!2sBrooklyn+Heights!5e0!3m2!1sen!2sus!4v1393612605402"></iframe>
+      	</section>
+	
+
+        <h1 id="motivation">-MOTIVATION-HEART-STRENGTH-DETERMINATION-</h1>
 
 	</div> <!-- wrapper-->
 
-	<footer>
-		<p>&copy; 2015 Protein Press Writers. All rights reserved.</p>
+	<!--////////MAIN END///////-->
 
-		<div id="social">
-		  <a class="twit" href="#" title="Twitter">Twitter</a>
-		  <a class="fbook" href="#" title="Facebook">Facebook</a>
-		  <a class="gplus" href="#" title="Google Plus">Google Plus</a>
-		</div>
-	</footer>
+<footer>
+	<p>&copy; 2015 Protein Press. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
 	
 
 </body>
+</html>
