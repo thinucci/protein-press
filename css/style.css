@@ -22,7 +22,7 @@
 }
 
 .divider{
-	margin-top: 150px;	
+	margin-top: 120px;	
 }
 
 
@@ -65,13 +65,15 @@ img, video, audio, iframe, table, form {
 }
 
 
-
-
 /*///////LAYOUT////////*/
 
 .col-4{
 	width: 32%;
 	float: left;
+}
+
+.col-6{
+	width: 48%;
 }
 
 .col-8{
@@ -133,6 +135,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 5;
 
 }
 
@@ -267,28 +270,31 @@ section {
 
 /*///////MAIN SECTIONS - DIET////////*/
 
-#rec-1{
-	background-color: #ccc;
-	text-align: center;
+#dietList div{
+	background-color: white;
+	padding: 30px;
+	margin-bottom: 10px;
+	border-radius: 20px 20px;
+
+}
+
+#dietList h1{
 	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 18px;
 }
 
-#rec-1 img{
-	width: 25%;
-	height: 25%;
+#dietList img{
 	float: left;
-	margin-right: 2%;
+	width: 50%;
+	height: 50%;
 }
 
-#rec-1 p{
-	text-align: center;
-}
-
-#rec-1 h2{
-	text-align: center;
-	margin-top: 0;
-	text-decoration: underline;
+#dietList p{
+	float: right;
+	font-size: 18px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	position: relative;
+	top: -20px;
+	z-index: 1;
 }
 
 
