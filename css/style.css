@@ -50,17 +50,12 @@ img, video, audio, iframe, table, form {
 }
 
 .border-right {
-  border-right: 1px dotted white;
+  border-right: 1px solid black;
   padding-right: 30px;
 }
 
-.border-bottom {
-  border-bottom: 1px dotted white;
-  padding-bottom: 30px;
-}
-
 .background {
-  background: url(../images/background_01.jpg) no-repeat center top;
+  background: url(../images/background_01.png) no-repeat center top;
   background-size: cover;
 }
 
@@ -68,6 +63,8 @@ img, video, audio, iframe, table, form {
 	background: url(../images/notebook.jpg) no-repeat center top;
   	background-size: cover;
 }
+
+
 
 
 /*///////LAYOUT////////*/
@@ -89,6 +86,42 @@ img, video, audio, iframe, table, form {
   margin-left: 0%;
 }
 
+/*///////SOCIAL////////*/
+
+#social {
+  
+  position: fixed;
+  top: 148px;
+  right: 80px;
+  width: 40px;
+  z-index: 2;
+}
+
+#social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a.fbook, a.twit, a.gplus {
+  background: url(../images/social-icons.png) no-repeat;
+}
+
+a.fbook:hover  { background-position: 0 0; }
+a.fbook { background-position: -40px 0; }
+a.fbook:active { background-position: -80px 0; }
+
+a.twit:hover { background-position: 0 -40px; }
+a.twit { background-position: -40px -40px; }
+a.twit:active { background-position: -80px -40px; }
+
+a.gplus:hover { background-position: 0 -80px; }
+a.gplus { background-position: -40px -80px; }
+a.gplus:active { background-position: -80px -80px; }
+
 
 /*///////HEADER////////*/
 
@@ -105,13 +138,13 @@ header {
 
 /*///////LOGO////////*/
 
-#logo{
+#logo {
 	float: left;
 }
 
 #logo h1{
 	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 60px;
+	font-size: 55px;
 	position: relative;
 	bottom: 30px;
 }
@@ -119,19 +152,18 @@ header {
 
 /*///////NAVBAR////////*/
 
-#navbar{
+#navbar {
 	float: right;
 }
 
-#navbar a{
+#navbar a { 
 	font-family: 'Pathway Gothic One', sans-serif;
 	font-size: 25px;
 	padding: 2px 10px;
-	text-decoration: none;
 	color: black;
 	position: relative;
 	top: 30px;
-	border-right: 2px solid black;
+	text-decoration: none;
 }
 
 #navbar a.visited {
@@ -148,20 +180,20 @@ section {
   background: #eee;
 }
 
-#foodList h3{
+#foodList h3 {
 	font-family:'Permanent Marker', cursive;
 	font-size: 32px;
 	text-decoration: underline;
 	text-align: center;
 }
 
-#foodList p{
+#foodList p {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 18px;
 	text-align: center;
 }
 
-#motivation{
+#motivation {
 	clear: both;
 	text-align: center;	
 	bottom: 40px;
@@ -173,47 +205,65 @@ section {
 	position-top: 100px;
 }
 
-#calculator{
+#calculator {
 	clear: both;
 	text-align: center;
 	font-family: 'Pathway Gothic One', sans-serif;
 	height: 400px;
 }
 
-#calculator h1{
+#calculator h1 {
 	font-family: 'Pathway Gothic One', sans-serif;
 	font-size: 40px;
-	color: green;
+	color: rgba(220,89,43,1);
 }
 
-#calculator span{
+#calculator span {
 	font-family: 'Pathway Gothic One', sans-serif;
 	font-size: 24px;
 	color: green;
 }
 
-#calculator input{
+#calculator input {
 	width: 100px;
 	height: 40px;
-	border: 1px solid green;
+	border: 1px solid rgba(220,89,43,1);
 }
 
-#calculate{
+#calculate {
 	font-family: 'Pathway Gothic One', sans-serif;
 	font-size: 24px;
 	padding: 10px 10px;
 }
 
-#calculate:hover{
-	border: 2px solid green;
+#calculate:hover {
+	border: 2px solid black;
+	background-color: rgba(220,89,43,1);
 }
 
-#linkList{
+#linkList {
 	float: right;
 	font-family: 'Permanent Marker', cursive;
 	
 }
 
+#linkList h1 {
+	position: relative;
+	right: -20px;
+}
+
+#linkList a {
+	text-decoration: none;
+	color: black;
+}
+
+#linkList a:visited {
+	text-decoration: none;
+}
+
+#linkList a:hover {
+	color: rgba(220,89,43,1);
+}
 
 /*///////MAIN SECTIONS - DIET////////*/
 
