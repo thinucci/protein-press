@@ -297,6 +297,35 @@ section {
 	z-index: 1;
 }
 
+/*///////MAIN SECTIONS - SUPPLEMENTS////////*/
+
+#supplementList div{
+	background-color: white;
+	padding: 30px;
+	margin-bottom: 10px;
+	border-radius: 20px 20px;
+
+}
+
+#supplementList h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#supplementList img{
+	float: left;
+	width: 50%;
+	height: 50%;
+}
+
+#supplementList p{
+	float: right;
+	font-size: 18px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	position: relative;
+	top: -20px;
+	z-index: 1;
+}
+
 
 /*///////FOOTER////////*/
 
