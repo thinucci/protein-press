@@ -30,6 +30,7 @@
 	<div class="wrapper">
 		<div id="logo">
 			<h1>PROTEIN-PRESS</h1>
+			<img src="../images/protein_logo.png" alt="Logo">
 		</div>
 	</div><!--wrapper-->
 
@@ -58,18 +59,22 @@
 				<form action="#" method="post">
 					
 					<label for="fullname">Name</label>
+					<span id="fullname-error" class="error">Sorry, your name must be at least 3 letters.</span>
 					<input type="text" id="fullname" name="fullname" placeholder="your name">
 
 					<label for="email">Email</label>
+					<span id="email-error" class="error">Sorry, must be a valid email.</span>
 		          	<input type="text" id="email" name="email" placeholder="your email">
 
 		         	<label for="message-title">Write the recipe title here</label>
+		         	<span id="title-error" class="error">Sorry, cannot be empty.</span>
 		          	<textarea id="message-title" name="message-title" rows="1"></textarea>
 		          
 		         	<label for="message">Write your recipe here</label>
-		          	<textarea id="message" name="message" rows="12"></textarea>
+		         	<span id="message-error" class="error">Sorry, cannot be empty.</span>
+		          	<textarea id="message" name="message" rows="16"></textarea>
 
-		          	<input type="submit" value="send">
+		          	<input id="contact-btn" type="submit" value="send">
 
 				</form>
 			</div>
@@ -92,7 +97,8 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/contact.js"></script>
 	
 
 </body>

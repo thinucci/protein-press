@@ -156,11 +156,13 @@ header {
 }
 
 #logo img{
+
 	position: relative;
 	bottom: 135px;
 	width: 14%;
 	height: 14%;
 }
+
 
 /*///////NAVBAR////////*/
 
@@ -283,8 +285,6 @@ section {
 	background-color: white;
 	padding: 30px;
 	margin-bottom: 10px;
-	border-radius: 20px 20px;
-
 }
 
 #dietList h1{
@@ -312,8 +312,6 @@ section {
 	background-color: white;
 	padding: 30px;
 	margin-bottom: 10px;
-	border-radius: 20px 20px;
-
 }
 
 #supplementList h1{
@@ -341,7 +339,6 @@ section {
 	background-color: white;
 	padding: 30px;
 	margin-bottom: 10px;
-
 }
 
 #contact-form h1{
@@ -354,14 +351,34 @@ section {
 
 #contact-form input{
 	display: block;
-	width: 100%;
-	margin-bottom: 10px;
+  	width: 100%;
+  	padding: 5px;
+  	margin-bottom: 5px;
+  	box-shadow: 0 3px 5px #ccc;
+  	border: 1px solid #ccc;
 }
 
 #contact-form textarea{
 	display: block;
-	width: 100%;
-	margin-bottom: 10px;
+  	width: 100%;
+  	padding: 5px;
+  	margin-bottom: 5px;
+  	box-shadow: 0 3px 5px #ccc;
+  	border: 1px solid #ccc;
+}
+
+#contact-btn{
+	color: white;
+	background-color: rgba(220,89,43,1);
+}
+
+#contact-form input.error, #contact-form textarea.error{
+  	border: 1px solid red;
+}
+
+span.error {
+  	display: none;
+  	color: red;
 }
 
 /*///////FOOTER////////*/
