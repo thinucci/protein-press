@@ -1,6 +1,4 @@
-// When document is ready run the code below
-
-  $(function() {
+$(function() {
 
 
 //CALCULATE
