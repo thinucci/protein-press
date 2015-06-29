@@ -183,8 +183,12 @@ header {
 	text-decoration: none;
 }
 
-#navbar a.visited {
+#navbar a:visited {
   text-decoration: none;
+}
+
+#navbar a:hover {
+  color: white;
 }
 
 

@@ -29,51 +29,48 @@ function validateName(fullname){
     }
 }
 
-function validateTitle(title){
-	if(title.length > 0) {
-		$('#message-title').removeClass('error');
-		$('#title-error').hide();
-		return true;
-	}
-	else{
-		$('#message-title').addClass('error');
-		$('#title-error').show();
-		return true;
-	}
-}
+function validateMessage(message) {
+    if (message.length > 0) {
+      $('#message').removeClass('error');
+      $('#message-error').hide();
+      return true;
+    }
+    else {
+      $('#message').addClass('error');
+      $('#message-error').show();
+      return false;
+    }
+  }
 
-function validateMessage(message){
-	if(message.length > 0) {
-		$('#message').removeClass('error');
-		$('#message-error').hide();
-		return true;
-	}
-	else{
-		$('#message').addClass('error');
-		$('#message-error').show();
-		return true;
-	}
-}
+function validateTitle(title) {
+    if (title.length > 0) {
+      $('#title').removeClass('error');
+      $('#title-error').hide();
+      return true;
+    }
+    else {
+      $('#title').addClass('error');
+      $('#title-error').show();
+      return false;
+    }
+  }
 
+// Form Submission
 
-
-  // Form Submission
 
   $('form').submit(function(event){
 
-  	var fullname = $('#fullname').val(),
-  		email = $('#email').val(),
-  		title = $('#message-title').val(),
-  		message = $.trim($('#message').val());
+    var fullname = $('#fullname').val(),
+        email = $('#email').val(),
+        message = $.trim($('#message').val());
+        title = $.trim($('#title').val());
 
-  	if(validateName(fullname) & validateEmail(email) & validateTitle(title) & validateMessage(message)){
-  		return true; //submits form
-  	}
-  	else{
-  		event.preventDefault(); // does not submit form
-  	}
-
-
+    if (validateName(fullname) & validateEmail(email) & validateMessage(message) & validateTitle(title)) {
+      return true; //submit form.
+    }
+    else {
+      event.preventDefault();  //prevent form from submitting!
+    }
   });
 
 
