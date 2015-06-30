@@ -29,6 +29,7 @@ function validateName(fullname){
     }
 }
 
+
 function validateMessage(message) {
     if (message.length > 0) {
       $('#message').removeClass('error');
@@ -40,7 +41,7 @@ function validateMessage(message) {
       $('#message-error').show();
       return false;
     }
-  }
+  } 
 
 function validateTitle(title) {
     if (title.length > 0) {

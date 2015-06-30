@@ -334,30 +334,42 @@ section {
 	margin-bottom: 10px;
 }
 
-#contact-form h1{
-	font-family: 'Pathway Gothic One', sans-serif;
-}
-
-#contact-form label{
+#contact-form h1, #contact-form label{
 	font-family: 'Pathway Gothic One', sans-serif;
 }
 
 #contact-form input{
 	display: block;
-  	width: 100%;
-  	padding: 5px;
-  	margin-bottom: 5px;
-  	box-shadow: 0 3px 5px #ccc;
-  	border: 1px solid #ccc;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0 3px 5px #ccc;
+	border: 1px solid #ccc;
 }
 
 #contact-form textarea{
 	display: block;
-  	width: 100%;
-  	padding: 5px;
-  	margin-bottom: 5px;
-  	box-shadow: 0 3px 5px #ccc;
-  	border: 1px solid #ccc;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0 3px 5px #ccc;
+	border: 1px solid #ccc;
+}
+
+#contact-form .verify-box{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 5px #ccc;
+  border: 1px solid #ccc;
+}
+
+img.verify-img {
+  width: 80px;
+  height: 50px;
+  float: left;
+  vertical-align: bottom;
+  margin-bottom: 10px;
 }
 
 #contact-btn{

@@ -9,7 +9,7 @@
   <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 
   <!--////////CSS REFERENCE///////-->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
   	<!--////////WEBSITE START///////-->
@@ -30,17 +30,17 @@
 	<div class="wrapper">
 		<div id="logo">
 			<h1>PROTEIN-PRESS</h1>
-			<img src="../images/protein_logo.png" alt="Logo">
+			<img src="images/protein_logo.png" alt="Logo">
 		</div>
 	</div><!--wrapper-->
 
 	<div class="wrapper">	
 		<div id="navbar">
 			<nav>
-				<a class="border-right" href="../index.html">HOME</a>
-				<a class="border-right" href="diet.html">DIET</a>
-				<a class="border-right" href="supplements.html">SUPPLEMENTATION</a>
-				<a href="contact.html">CONTACT</a>
+				<a class="border-right" href="index.html">HOME</a>
+				<a class="border-right" href="html/diet.html">DIET</a>
+				<a class="border-right" href="html/supplements.html">SUPPLEMENTATION</a>
+				<a href="contact.php">CONTACT</a>
 			</nav>
 		</div><!--#navbar-->
 	</div><!--wrapper-->
@@ -52,31 +52,48 @@
 	<div class="wrapper divider row">
 
 		<main id="contact-form" class="row">
+
 			<div class="first col-12 shadow">
+
+      <?php if($_GET['s'] == 'success') {  ?>
+      <p>Thank you. Your message has been sent successfully!</p>
+      <?php } else if ($_GET['s'] == 'error') { ?>
+      <p>Error. Your message was not sent! Make sure you type in the proper verification numbers. <a href="contact.php">
+        Click here to try again.</a>If issues persist please send an email to the site admin (thiagonucci@gmail.com).</p>
+
+      <?php } else{ ?>
 
 				<h1>Send us your recipe!</h1>
 
-				<form action="#" method="post">
+				<form action="mailer.php" method="post">
 					
 					<label for="fullname">Name</label>
 					<span id="fullname-error" class="error">Sorry, your name must be at least 3 letters.</span> <!-- error span trigger by JS -->
 					<input type="text" id="fullname" name="fullname" placeholder="your name">
 
 					<label for="email">Email</label>
-					<span id="email-error" class="error">Sorry, must be a valid email.</span> <!-- error span trigger by JS -->
-		      <input type="text" id="email" name="email" placeholder="your email">
+					<span id="email-error" class="error">Sorry, must be a valid email.</span>
+        	<input type="text" id="email" name="email" placeholder="your email">
 
-		      <label for="title">Write your recipe title here</label>
-          <span id="title-error" class="error">Sorry, cannot be empty.</span> <!-- error span trigger by JS -->		  <textarea id="title" name="title" rows="1"></textarea>
-		          
-		      <label for="message">Write your recipe here</label>
-		      <span id="message-error" class="error">Sorry, cannot be empty.</span> <!-- error span trigger by JS -->
-		      <textarea id="message" name="message" rows="16"></textarea>
+        	<label for="title">Write the recipe title here</label>
+        	<span id="title-error" class="error">Sorry, cannot be empty.</span>
+         	<textarea id="title" name="title" rows="1"></textarea>
+        
+        	<label for="message">Write your recipe here</label>
+        	<span id="message-error" class="error">Sorry, cannot be empty.</span>
+        	<textarea id="message" name="message" rows="16"></textarea>
 
-		      <input id="contact-btn" type="submit" value="send">
+          <input type="text" name="verify" class="verify-box" placeholder="verify you are human">
+          <img class="verify-img" src="verificationimage.php?<?php echo rand(0, 9999) ?>" alt="verification image">
+
+        	<input id="contact-btn" type="submit" value="send">
 
 				</form>
+
+        <?php } ?>
+        
 			</div>
+
 		</main>
 
 		<section class="first col-12 shadow">
@@ -96,8 +113,8 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/contact.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
 	
 
 </body>
