@@ -291,10 +291,9 @@ section {
 #dietList div{
 	background-color: white;
 	padding: 20px;
-	margin-bottom: 10px;
 }
 
-#dietList h1{
+#dietList h1, #dietList h2{
 	font-family: 'Pathway Gothic One', sans-serif;
 }
 
@@ -306,15 +305,31 @@ section {
 	z-index: 0;
 }
 
+
+.toggle {
+  cursor: pointer;
+  font-family: 'Pathway Gothic One', sans-serif;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+#dietList .toggle:hover {
+  background-color: rgba(220,89,43,0.95);
+}
+
+.content {
+  display: none;
+}
+
+
 /*///////MAIN SECTIONS - SUPPLEMENTS////////*/
 
 #supplementList div{
 	background-color: white;
 	padding: 20px;
-	margin-bottom: 10px;
 }
 
-#supplementList h1{
+#supplementList h1, #supplementList h2{
 	font-family: 'Pathway Gothic One', sans-serif;
 }
 
@@ -324,6 +339,10 @@ section {
 	font-size: 18px;
 	font-family: 'Pathway Gothic One', sans-serif;
 	z-index: 0;
+}
+
+#supplementList .toggle:hover {
+  background-color: rgba(220,89,43,0.95);
 }
 
 /*///////MAIN SECTIONS - CONTACT////////*/
