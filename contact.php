@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-  	<!--////////WEBSITE START///////-->
+  <!--////////WEBSITE START///////-->
   	
 <body class="background">
 
@@ -24,15 +24,15 @@
       <a class="gplus" href="#" title="Google Plus">Google Plus</a>
     </div>
 
-    <!--////////HEADER///////-->
+  <!--////////HEADER///////-->
 
 	<header>
-	<div class="wrapper">
-		<div id="logo">
-			<h1>PROTEIN-PRESS</h1>
-			<img src="images/protein_logo.png" alt="Logo">
-		</div>
-	</div><!--wrapper-->
+  <div class="wrapper">
+    <div id="logo">
+      <a href="index.html"><img src="images/protein_logo.png" alt="Protein Press Logo"></a>
+      <a href="index.html"><h1>PROTEIN-PRESS</h1></a>
+    </div>
+  </div><!--wrapper-->
 
 	<div class="wrapper">	
 		<div id="navbar">
