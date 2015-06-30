@@ -42,38 +42,34 @@ function validateTitle(title){
 	}
 }
 
-function validateMessage(message){
-	if(message.length > 0) {
-		$('#message').removeClass('error');
-		$('#message-error').hide();
-		return true;
-	}
-	else{
-		$('#message').addClass('error');
-		$('#message-error').show();
-		return true;
-	}
-}
+function validateMessage(message) {
+    if (message.length > 0) {
+      $('#message').removeClass('error');
+      $('#message-error').hide();
+      return true;
+    }
+    else {
+      $('#message').addClass('error');
+      $('#message-error').show();
+      return false;
+    }
+  }
 
-
-
-  // Form Submission
 
   $('form').submit(function(event){
 
-  	var fullname = $('#fullname').val(),
-  		email = $('#email').val(),
-  		title = $('#message-title').val(),
-  		message = $.trim($('#message').val());
-
-  	if(validateName(fullname) & validateEmail(email) & validateTitle(title) & validateMessage(message)){
-  		return true; //submits form
-  	}
-  	else{
-  		event.preventDefault(); // does not submit form
-  	}
+    var fullname = $('#fullname').val(),
+        email = $('#email').val(),
+        message = $.trim($('#message').val());
+        title = $.trim($('#title').val());
 
 
+    if (validateName(fullname) & validateEmail(email) & validateMessage(message) & validateTitle(title)) {
+      return true; //submit form.
+    }
+    else {
+      event.preventDefault();  //prevent form from submitting!
+    }
   });
 
 
