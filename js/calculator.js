@@ -1,31 +1,60 @@
 $(function() {
 
+//Selectors
 
-//CALCULATE
-    
-   $('#calculate').click(function() {
+var $intakeMin = $('#totalIntakeMin'),
+    $intakeMax = $('#totalIntakeMax'),
+    $invalid = $('#invalidInput'),
+    $choiceKg = $('#weightNumberType option[value="kg"]'),
+    $choiceLb = $('#weightNumberType option[value="lb"]'),
+    $Unit = $('#weightUnit');
+//Calculate
 
-	var input = $('#weight').val();
+$('#weightNumberType').change(function() {
+    var eventTypeName = $("#weightNumberType option:selected");
 
-   	
-   	if(input > 0) {
+    if (eventTypeName.is($choiceKg) ) {
+      $Unit.text('Body Weight (kg): ');
+    }
 
-	  	var minimum = input * 1.2;
-	  	var maximum = input * 2.2;
-	  	$('#totalIntakeMin').text(minimum + 'g' + '' + '-' + '');
-	  	$('#totalIntakeMax').text(maximum + 'g');
-	  	$('#invalidInput').text('');
-	}
-
-	else {
-		$('#totalIntakeMin').text('');
-	  	$('#totalIntakeMax').text('');
-		$('#invalidInput').text('Not a valid weight number.').css('color','red');
-	}
-    
-   });
-
+    else if (eventTypeName.is($choiceLb) ){
+      $Unit.text('Body Weight (lb): ');
+    }
 
 });
-  
     
+ $('#calculate').click(function(){
+
+  	var input = $('#weight').val();
+
+    if ($choiceLb.is(':selected') & input > 0) {
+      var minimum = input * 1;
+      var maximum = input * 1.5;
+      // $('#weightUnit').text('Body Weight (lb): ');
+      $intakeMin.text(minimum + 'g - ');
+      $intakeMax.text(maximum + 'g');
+      $invalid.text('');
+      
+    } 
+
+    else if ($choiceKg.is(':selected') & input > 0) {
+      var minimum = input * 2.2;
+      var maximum = input * 3.3;
+      // $('#weightUnit').text('Body Weight (kg): ');
+      $intakeMin.text(minimum + 'g - ');
+      $intakeMax.text(maximum + 'g');
+      $invalid.text('');
+    }
+
+    else{
+      $intakeMin.text('');
+      $intakeMax.text('');
+      $invalid.text('Not a valid weight number.').css('color','red');
+
+    }
+  
+  });
+
+    
+
+});
