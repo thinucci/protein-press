@@ -26,6 +26,18 @@ $('#supplementList').find('.toggle').click(function(){
     
    });
 
+///// VIDEO CAROUSEL TABS //////////////
+
+$('#vidSection').find('.pane').click(function(){
+
+    //Expand or collapse this panel
+    $('.vid').next().show();
+
+    //Hide the other panels
+    $('.vid').not($(this).next()).hide();
+    
+   });
+
 
 
 

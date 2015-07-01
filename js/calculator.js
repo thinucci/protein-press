@@ -30,7 +30,6 @@ $('#weightNumberType').change(function() {
     if ($choiceLb.is(':selected') & input > 0) {
       var minimum = input * 1;
       var maximum = input * 1.5;
-      // $('#weightUnit').text('Body Weight (lb): ');
       $intakeMin.text(minimum + 'g - ');
       $intakeMax.text(maximum + 'g');
       $invalid.text('');
@@ -40,7 +39,6 @@ $('#weightNumberType').change(function() {
     else if ($choiceKg.is(':selected') & input > 0) {
       var minimum = input * 2.2;
       var maximum = input * 3.3;
-      // $('#weightUnit').text('Body Weight (kg): ');
       $intakeMin.text(minimum + 'g - ');
       $intakeMax.text(maximum + 'g');
       $invalid.text('');

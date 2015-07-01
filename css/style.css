@@ -207,10 +207,6 @@ section {
   margin-bottom: 10px;
 }
 
-#vidTab {
-  background-color: white;
-}
-
 #foodList {
   padding: 0;
 }
@@ -254,6 +250,18 @@ section {
 
 #linkList a:hover {
   color: rgba(220,89,43,1);
+}
+
+/*///// VIDEO CAROUSEL ////////*/
+
+#vidSection {
+  background-color: white;
+}
+
+.pane{
+  display: inline;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 /*////// CALCULATOR /////////*/
