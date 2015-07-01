@@ -4,10 +4,6 @@
   <meta charset="UTF-8">
   <title>Protein Press - The true source of information for bodybuilders</title>
 
-  <!--////////FONTS///////-->
-  <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
-
   <!--////////CSS REFERENCE///////-->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -96,13 +92,12 @@
 
 		</main>
 
-		<section class="first col-12 shadow">
-	        <!-- Map -->
-	        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6049.760881033193!2d-73.99517294629514!3d40.69863072747073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a47df06b185%3A0xc889234bc07c42ee!2sBrooklyn+Heights!5e0!3m2!1sen!2sus!4v1393612605402"></iframe>
+		<section id="map" class="first col-12 shadow">
+	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6049.760881033193!2d-73.99517294629514!3d40.69863072747073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a47df06b185%3A0xc889234bc07c42ee!2sBrooklyn+Heights!5e0!3m2!1sen!2sus!4v1393612605402"></iframe>
     </section>
 	
 
-        <h1 id="motivation">-MOTIVATION-HEART-STRENGTH-DETERMINATION-</h1>
+    <h1 id="motivation">-MOTIVATION-HEART-STRENGTH-DETERMINATION-</h1>
 
 	</div> <!-- wrapper-->
 

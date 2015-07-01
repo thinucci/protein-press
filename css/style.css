@@ -1,3 +1,9 @@
+/*//////// FONTS //////*/
+
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+
 /*/////// FIXES ////////*/
 
 .row:after {
@@ -196,11 +202,17 @@ header {
 
 /*/////// HOME PAGE ////////*/
 
-
 section {
   padding: 20px;
-  margin-bottom: 30px;
-  background: #eee;
+  margin-bottom: 10px;
+}
+
+#vidTab {
+  background-color: white;
+}
+
+#foodList {
+  padding: 0;
 }
 
 #foodList h3 {
@@ -214,6 +226,15 @@ section {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 18px;
 	text-align: center;
+}
+
+#foodList a {
+  text-decoration: none;
+  color: black;
+}
+
+#foodList a:hover {
+  color: rgba(220,89,43,1);
 }
 
 #linkList {
@@ -231,10 +252,6 @@ section {
   color: black;
 }
 
-#linkList a:visited {
-  text-decoration: none;
-}
-
 #linkList a:hover {
   color: rgba(220,89,43,1);
 }
@@ -247,6 +264,7 @@ section {
 	text-align: center;
 	font-family: 'Pathway Gothic One', sans-serif;
 	height: 400px;
+  background-color: white;
 }
 
 #calculator h1 {
@@ -395,6 +413,10 @@ img.verify-img {
 span.error {
   display: none;
   color: red;
+}
+
+#map {
+  background-color: white;
 }
 
 /*/////// FOOTER ////////*/
