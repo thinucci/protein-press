@@ -6,6 +6,8 @@
 
   <!--////////CSS REFERENCE///////-->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="flexslider/flexslider.css">
+        
 </head>
 
   <!--////////WEBSITE START///////-->
@@ -46,10 +48,80 @@
 	<!--////////MAIN START///////-->
 
 	<div class="wrapper divider row">
- 
+    
+    <!-- tab panes -->
+    <div id="tab-nut" class="pane activePane">Nutrition</div>
+    <div id="tab-train" class="pane">Training</div>
+    <div id="tab-motiv" class="pane">Motivation</div>
+    <div id="tab-comp" class="pane">Competition</div>
+    <!-- tab panes end-->
+
 		<section id="vidSection" class="first col-12 shadow">
-			<iframe class="vid" width="853" height="480" src="https://www.youtube.com/embed/ZmAFMNmSKus" frameborder="0" allowfullscreen></iframe>
-      <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/JJqnvMxhUGg" frameborder="0" allowfullscreen></iframe>
+
+
+      <!-- diet category-->
+
+      <div id="tabs-1">
+      
+      <div class="flexslider">
+
+      <ul class="slides">
+      <li><iframe class="vid-nut" width="560" height="315" src="https://www.youtube.com/embed/kwnTET2atf4" frameborder="0" allowfullscreen></iframe></li>
+      <li><iframe class="vid-nut" width="560" height="315" src="https://www.youtube.com/embed/YmfvOmVQ8wM" frameborder="0" allowfullscreen></iframe></li>
+      <li><iframe class="vid-nut" width="560" height="315" src="https://www.youtube.com/embed/QVBign_5JxM" frameborder="0" allowfullscreen></iframe></li>
+      </ul>
+
+      </div>
+
+      </div>
+
+      <!-- training category-->
+
+      <div id="tabs-2">
+      
+      <div class="##flexslider">
+
+      <ul class="slides">
+      <li><iframe class="vid-train" width="560" height="315" src="https://www.youtube.com/embed/JJqnvMxhUGg" frameborder="0" allowfullscreen></iframe></li>
+      <li><iframe class="vid-train" width="560" height="315" src="https://www.youtube.com/embed/XEaPp2m9ahg" frameborder="0" allowfullscreen></iframe></li>
+      <li><iframe class="vid-train" width="560" height="315" src="https://www.youtube.com/embed/RH5s5Vl-F7E" frameborder="0" allowfullscreen></iframe></li>
+      </ul>
+
+      </div>
+
+      </div>
+
+      <!-- motivation category-->
+
+      <div id="tabs-3">
+      
+      <div class="##flexslider">
+
+      <ul class="slides">
+      <li><iframe class="vid-motiv" width="560" height="315" src="https://www.youtube.com/embed/mjJF1q8nbtM" frameborder="0" allowfullscreen></iframe></li>
+      <li><iframe class="vid-motiv" width="420" height="315" src="https://www.youtube.com/embed/vH0nP4NzS9M" frameborder="0" allowfullscreen></iframe></li>
+      <li><iframe class="vid-motiv" width="420" height="315" src="https://www.youtube.com/embed/rUu2nqe-D30" frameborder="0" allowfullscreen></iframe></li>
+      </ul>
+
+      </div>
+
+      </div>
+
+      <!-- competition category-->
+
+      <div id="tabs-4">
+      
+      <div class="##flexslider">
+
+      <ul class="slides">
+      <li><iframe class="vid-comp" width="560" height="315" src="https://www.youtube.com/embed/pnpt7han0SE" frameborder="0" allowfullscreen></iframe></li>
+      <li><iframe class="vid-comp" width="560" height="315" src="https://www.youtube.com/embed/kPFpEuY4tWg" frameborder="0" allowfullscreen></iframe></li>
+      <li><iframe class="vid-comp" width="560" height="315" src="https://www.youtube.com/embed/EfCAgwec_QA" frameborder="0" allowfullscreen></iframe></li>
+      </ul>
+
+      </div>
+
+      </div>
 
 		</section>
 
@@ -91,9 +163,9 @@
 		  	<input id="weight" type="text" name="bodymass" >
 			</div>
 
-    	<select id = "weightNumberType">
-        <option value = "kg">KG</option>
-        <option value = "lb">LB</option>
+    	<select id ="weightNumberType">
+        <option value ="kg">KG</option>
+        <option value ="lb">LB</option>
       </select>
 
      	<div>
@@ -134,9 +206,9 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="flexslider/jquery.flexslider-min.js"></script>  
 <script src="js/calculator.js"></script>
-<script src="js/main.js"></script>
-	
+<script src="js/main.js"></script>	
 
 </body>
 </html>
