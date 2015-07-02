@@ -6,7 +6,7 @@ $('#dietList').find('.toggle').click(function(){
 
     //Expand or collapse this panel
     $(this).next().slideToggle('fast');
-    $(this).css('background-color','rgba(220,89,43,0.95)');
+    $(this).css('background-color','#ADD8E6');
 
     //Hide the other panels
     $(".content").not($(this).next()).slideUp('fast');
@@ -18,7 +18,7 @@ $('#supplementList').find('.toggle').click(function(){
 
     //Expand or collapse this panel
     $(this).next().slideToggle('fast');
-    $(this).css('background-color','rgba(220,89,43,0.95)');
+    $(this).css('background-color','#ADD8E6');
 
     //Hide the other panels
     $(".content").not($(this).next()).slideUp('fast');
@@ -44,10 +44,6 @@ $tabNut.click(function(){
     $vidNut.show();
     removeActive();
     $tabNut.addClass('activePane');
-
-    $('.flexslider').flexslider({
-    animation: "slide"
-  });
 
 });
 
@@ -89,24 +85,5 @@ function removeActive(){
 
 ///////////////// SLICK CAROUSEL
 
-// $('.flexslider').flexslider({
-//     animation: "slide"
-//   });
-
-// $( "#tabs" ).tabs({
-//  beforeActivate: function( e, ui ) {
-//      if(ui.oldTab.length>0){
-//         ui.oldTab.find( ".flexslider" ).flexslider( "destroy" );
-//      }
-//  },
-//  show: function(e,ui){
-//     $(ui.panel).find( ".flexslider" ).flexslider({
-//     animation: "slide",
-//     controlNav: "thumbnails",
-//     animationLoop: false,
-//     slideshow: false
-//     });
-//  }
-// });
 
 });

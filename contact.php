@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Protein Press - The true source of information for bodybuilders</title>
+  <title>Protein Press - Contact</title>
 
   <!--////////CSS REFERENCE///////-->
   <link rel="stylesheet" href="css/style.css">
@@ -15,10 +15,10 @@
 	<!--////////SOCIAL///////-->
 
 	<div id="social">
-      <a class="twit" href="#" title="Twitter">Twitter</a>
-      <a class="fbook" href="#" title="Facebook">Facebook</a>
-      <a class="gplus" href="#" title="Google Plus">Google Plus</a>
-    </div>
+    <a class="twit" href="#" title="Twitter">Twitter</a>
+    <a class="fbook" href="#" title="Facebook">Facebook</a>
+    <a class="gplus" href="#" title="Google Plus">Google Plus</a>
+  </div>
 
   <!--////////HEADER///////-->
 
@@ -51,13 +51,13 @@
 
 			<div class="first col-12 shadow">
 
-      <?php if($_GET['s'] == 'success') {  ?>
-      <p>Thank you. Your message has been sent successfully!</p>
-      <?php } else if ($_GET['s'] == 'error') { ?>
-      <p>Error. Your message was not sent! Make sure you type in the proper verification numbers. <a href="contact.php">
-        Click here to try again.</a>If issues persist please send an email to the site admin (thiagonucci@gmail.com).</p>
+        <?php if($_GET['s'] == 'success') {  ?>
+        <p>Thank you. Your message has been sent successfully!</p>
+        <?php } else if ($_GET['s'] == 'error') { ?>
+        <p>Error. Your message was not sent! Make sure you type in the proper verification numbers. <a href="contact.php">
+          Click here to try again.</a>If issues persist please send an email to the site admin (thiagonucci@gmail.com).</p>
 
-      <?php } else{ ?>
+        <?php } else{ ?>
 
 				<h1>Send us your recipe!</h1>
 

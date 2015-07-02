@@ -229,10 +229,6 @@ section {
   color: black;
 }
 
-#foodList a:hover {
-  color: rgba(220,89,43,1);
-}
-
 #linkList {
   float: right;
   font-family: 'Permanent Marker', cursive;
@@ -249,7 +245,7 @@ section {
 }
 
 #linkList a:hover {
-  color: rgba(220,89,43,1);
+  background-color: #ADD8E6;
 }
 
 /*///// VIDEO CAROUSEL ////////*/
@@ -361,7 +357,7 @@ section {
 }
 
 #dietList .toggle:hover {
-  background-color: rgba(220,89,43,0.95);
+  background-color: #ADD8E6;
 }
 
 .content {
@@ -389,7 +385,7 @@ section {
 }
 
 #supplementList .toggle:hover {
-  background-color: rgba(220,89,43,0.95);
+  background-color: #ADD8E6;
 }
 
 /*/////// CONTACT PAGE ////////*/
@@ -472,7 +468,7 @@ span.error {
 
 footer {
 
-	background-color: rgba(220,89,43,1);
+	background-color: #ADD8E6;
 	border-top: 2px black solid;
 	font-family: 'Pathway Gothic One', sans-serif;
 	text-align: center;
