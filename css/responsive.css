@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1295px) {
+
+  #social {
+    position: absolute;
+    top: 92px;
+    right: 4%;
+    width: auto;
+  }
+
+  #social a {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1108px) {
+
+  .wrapper {
+    width: 90%;
+  }
+
+  #logo img{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  body {
+    font-size: 85%;
+  }
+
+}
+
+@media only screen and (max-width: 820px) {
+
+  #foodList p{
+    font-size: 14px;
+  }
+
+  #foodList h3{
+    font-size: 25px;
+  }
+
+
+}
+
+@media only screen and (max-width: 678px) {
+
+  #foodList h3{
+    font-size: 20px;
+  }
+
+   #navbar nav a:first-child {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  #foodList p{
+    font-size: 12px;
+  }
+
+  #logo h1{
+    font-size: 35px;
+    bottom: -20px;
+  }
+
+  #calculator h1 {
+  font-size: 30px;
+  }
+
+  #calculator span {
+  font-size: 18px;
+  }
+
+  #navbar nav a{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+
+
+   #foodList h3{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+   #logo h1{
+    font-size: 21px;
+  }
+
+  #foodList p{
+    font-size: 10px;
+  }
+
+  #calculator h2{
+    font-size: 1.2em;
+  }
+
+  #calculator h1{
+    font-size: 25px;
+  }
+
+  #calculator input, #calculator select{
+    width: 80%;
+  }
+
+  #calculate{
+    padding: 5px 5px;
+  }
+}
+

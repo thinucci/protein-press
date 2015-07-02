@@ -6,6 +6,8 @@
 
   <!--////////CSS REFERENCE///////-->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 
   <!--////////WEBSITE START///////-->
